@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from verify_passport_crew import get_passport_details
+from apply_leave_crew import applyleave
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -16,9 +16,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get("/verifypass/")
-def verify_passport(query: str):
-    res = {"Agent Response": get_passport_details(query).raw}
+@app.get("/applyleave/")
+def verify_leave(query: str):
+    res = {"Agent Response": applyleave(query).raw}
     return res
 
 @app.route('/')

@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Verify Passport Agent Crew API",
-    "description": "Verify Passport Information Agent Crew API",
+    "title": "HR Leave Application Agent Crew API",
+    "description": "HR Leave Application Agent Crew API",
     "version": "0.1.0",
     "x-ibm-skill-type": "imported",
     "x-ibm-skill-subtype": "public",
@@ -21,8 +21,8 @@
   "paths": {
     "/verifypass/": {
       "get": {
-        "summary": "Verify Passport Info",
-        "operationId": "VerifyPassportInfo",
+        "summary": "Apply for Leave",
+        "operationId": "ApplyLeaveInfo",
         "parameters": [
           {
             "name": "query",
